@@ -14,7 +14,7 @@ const theme = createTheme({
 const App = () => {
     return (
         <ThemeProvider theme={theme}>
-            <Box className="App"><Game/></Box>
+            <Box className="App" sx={{padding: "0.2em"}}><Game/></Box>
         </ThemeProvider>
     );
 };
