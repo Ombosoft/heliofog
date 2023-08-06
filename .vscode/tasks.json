@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "client dev",
+            "type": "npm",
+            "script": "dev",
+            "problemMatcher": [
+                {
+                    "owner": "typescript",
+                    "source": "Typescript",
+                    "fileLocation": "absolute",
+                    "applyTo": "allDocuments",
+                    "background": {
+                        "activeOnStart": true
+                        // "beginsPattern": "sd",
+                        // "endsPattern": " > "
+                    },
+                    "pattern": [
+                        {
+                            "regexp": "(ERROR|WARNING)\\(TypeScript\\)  (.*)",
+                            "severity": 1,
+                            "message": 2
+                        },
+                        {
+                            "regexp": "^ FILE  (.*):(\\d*):(\\d*)$",
+                            "file": 1,
+                            "line": 2,
+                            "column": 3
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
