@@ -1,6 +1,7 @@
 import { ThemeProvider } from "@emotion/react";
-import { createTheme } from "@mui/material";
+import { Box, createTheme } from "@mui/material";
 import "./App.css";
+import { Game } from "./Game";
 
 const theme = createTheme({
     typography: {
@@ -13,7 +14,7 @@ const theme = createTheme({
 const App = () => {
     return (
         <ThemeProvider theme={theme}>
-            <div className="App">Hello</div>
+            <Box className="App"><Game/></Box>
         </ThemeProvider>
     );
 };
