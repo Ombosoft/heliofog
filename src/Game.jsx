@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
 import { Paper } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
-import elements from "./Elements";
+import elementDefs from "./ElementDefs";
 
 export const Game = () => {
-    const rows = elements;
+    const rows = elementDefs;
     return (
         <Grid container spacing={1}>
             {rows.map((el) => (
