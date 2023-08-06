@@ -1,27 +1,38 @@
 {
-  "name": "heliofog",
-  "version": "1.0.0",
-  "scripts": {
-    "start": "vite --port 3000 --open",
-    "dev": "vite --port 3000 --open",
-    "build": "vite build",
-    "serve": "vite preview",
-    "test": "vitest"
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^14.0.0",
-    "@vitejs/plugin-react": "^4.0.4",
-    "jsdom": "^22.1.0",
-    "vite": "^4.4.8",
-    "vitest": "^0.34.1"
-  },
-  "description": "<h1 align=\"center\">Heliofog</h1>",
-  "main": "vite.config.js",
-  "author": "Ombosoft",
-  "license": "Apache-2.0"
+    "name": "heliofog",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "vite --port 3000 --open",
+        "dev": "vite --port 3000 --open",
+        "build": "vite build",
+        "serve": "vite preview",
+        "test": "vitest"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest",
+            "plugin:react-hooks/recommended"
+        ]
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "printWidth": 80
+    },
+    "dependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@testing-library/jest-dom": "^5.17.0",
+        "@testing-library/react": "^14.0.0",
+        "@vitejs/plugin-react": "^4.0.4",
+        "jsdom": "^22.1.0",
+        "vite": "^4.4.8",
+        "vitest": "^0.34.1"
+    },
+    "description": "<h1 align=\"center\">Heliofog</h1>",
+    "main": "vite.config.js",
+    "author": "Ombosoft",
+    "license": "Apache-2.0"
 }
