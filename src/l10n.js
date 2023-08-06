@@ -1,4 +1,4 @@
 // localization placeholder
-const l = s => s;
+const ll = s => s;
 
-export default l;
+export default ll;

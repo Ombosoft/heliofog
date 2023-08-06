@@ -1,10 +1,10 @@
-import l from "./l10n";
+import ll from "./l10n";
 
 const elementDefs = [
-    { id: "e", name: l("energy") },
-    { id: "H", name: l("Hydrogen") },
-    { id: "He", name: l("Helium") },
-    { id: "Li", name: l("Lithium") },
+    { id: "e", name: ll("energy") },
+    { id: "H", name: ll("Hydrogen") },
+    { id: "He", name: ll("Helium") },
+    { id: "Li", name: ll("Lithium") },
 ];
 
 export default elementDefs;

@@ -12,6 +12,7 @@
         "extends": [
             "eslint:recommended",
             "plugin:react/recommended",
+            "plugin:react-hooks/recommended",
             "plugin:import/errors",
             "plugin:import/warnings"
         ],
@@ -24,9 +25,10 @@
             "import"
         ],
         "rules": {
-            "react/jsx-uses-react": "off",
             "react/react-in-jsx-scope": "off",
-            "react/prop-types": 0
+            "react/prop-types": 0,
+            "no-unused-vars": 1,
+            "react-hooks/exhaustive-deps": 2
         },
         "settings": {
             "react": {
